@@ -1,0 +1,77 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>{{version.version}}</title>
+
+
+    <link href="{% static 'adminmy/assets/css/bootstrap.css' %}" rel="stylesheet">
+	<link href="{% static 'adminmy/assets/css/bootstrap-theme.css' %}" rel="stylesheet">
+	<link href="{% static 'adminmy/assets/css/font-awesome.css' %}" rel="stylesheet">
+
+
+    <link href="{% static 'adminmy/assets/css/style.css' %}" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{{version.version}}</h1>
+					<h2 class="subtitle">{{version.text}}</h2>
+					<div id="countdown"></div>
+					<form class="form-inline signup" role="form">
+					  
+					</form>		
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                         <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+						<p class="copyright">&copy; Took</p>
+                        <div class="credits">
+
+                            
+                        </div>
+				</div>
+			</div>		
+		</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static 'adminmy/assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'adminmy/assets/js/jquery.countdown.min.js' %}"></script>
+	<script type="text/javascript">
+      $('#countdown').countdown('2017/12/01', function(event) {
+        $(this).html(event.strftime('%w w %d d <br /> %H:%M:%S'));
+      });
+    </script>
+<script type="text/javascript"><!--
+document.write("<a href='//script.xn--41a.ws/click;xn--41a-ws' "+
+"target=_blank><img src='//counter.yadro.ru/hit;xn--41a-ws?t14.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='0' height='0'><\/a>")
+//--></script>
+
+</body>
+</html>

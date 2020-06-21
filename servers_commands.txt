@@ -1,0 +1,16 @@
+
+GOOGLE API = AIzaSyBHCqgLk9tjENURjKYGzROyTZTgx78yEgY
+------------------------------------------------------------------------------
+COMMAND FOR VIRTUALENV AND PIP
+
+virtualenv name_of_virtualenv        #make virtualenv
+pip instal name                      #install python packages(f.e name)
+pip freeze                           #show installed packages
+pip install 'Markdown<2.0'	     #install version packages (f.e. Markdown)
+pip install -U name                  #upgrade name
+pip uninstall name                   #uninstall packages 
+
+-------------------------------------------------------------------------------
+
+COMMAND FOR DJANGO
+
